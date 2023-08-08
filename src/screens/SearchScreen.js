@@ -24,7 +24,7 @@ const SearchScreen = () => {
       />
       {errorMessage ? <Text>{errorMessage}</Text> : null}
 
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <ResultsList
           results={filterResultsByPrice('$')}
           title="Cost Effective"
